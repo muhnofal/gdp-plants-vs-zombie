@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 3637928700728085803}
   - component: {fileID: 3739970444938205296}
   - component: {fileID: 7408213469911333502}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PeaShooterObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

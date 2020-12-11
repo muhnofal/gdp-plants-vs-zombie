@@ -30,6 +30,7 @@ public class Properties : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        checkDeath();
 
         if (currentEnergy > maxEnergy)
         {
@@ -50,7 +51,7 @@ public class Properties : MonoBehaviour
 
     void checkDeath()
     {
-        if (life < 0)
+        if (life <= 0)
         {
             Destroy(gameObject);
         }

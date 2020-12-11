@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class SeedScript : MonoBehaviour
 {
+
+    //Scipt ini adalah untuk mengatur kartu tanaman;
+
     public GameObject prefabPlant;
     private bool canPlant = true;
     public AudioSource[] sounds;

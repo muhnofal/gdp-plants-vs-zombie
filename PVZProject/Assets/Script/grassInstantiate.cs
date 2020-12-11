@@ -6,6 +6,8 @@ using UnityEngine;
 public class grassInstantiate : MonoBehaviour
 {
 
+    //Script ini untuk melooping Object grass sebanyak 45 kali
+
     public GameObject prefabGrass;
     private GameObject grass;
     private float currentX = -5.498f, currentY = 2.725f, distanceX, distanceY;

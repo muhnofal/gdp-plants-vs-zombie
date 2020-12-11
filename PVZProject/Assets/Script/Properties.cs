@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Properties : MonoBehaviour
 {
+
+    //Script Properties adalah hal - hal yang menyangkut tentang karakter, seperti energi, dan ketika karakter dipencet;
+
     public GameObject prefabPlant;
     public EnergyScript energyBar;
 

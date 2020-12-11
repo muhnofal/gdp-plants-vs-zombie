@@ -5,6 +5,8 @@ using UnityEngine;
 public class GrassScript : MonoBehaviour
 {
 
+    //Script ini untuk menangani object grass.
+    //Untuk saat ini kita sudah bisa menaruh tanaman di grass
 
     private bool isEmpty;
 

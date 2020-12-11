@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class EnergyScript : MonoBehaviour
 {
 
+    //Script ini untuk mengatur stamina bar
+    //Script diterapkan di Script Properties
+
     public Slider energyBar;
 
 

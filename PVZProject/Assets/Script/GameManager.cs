@@ -5,6 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
+    //Script Untuk Mengatur Mekanik Game;
+    //Disini baru ada cash, dan shove(belum bisa dipake)
     public static int cash;
     public static bool shovelEnabled;
 

@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d39e5b384a5d384429dbddb3996fecba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPlant: {fileID: 8196715620301464401, guid: 9feafe1353e9c854d9b3ba71f3f510ea, type: 3}
+  prefabPlant: {fileID: 8772563380478889077, guid: 9feafe1353e9c854d9b3ba71f3f510ea, type: 3}
   sounds:
   - {fileID: 1738565326396368199}
   - {fileID: 1738565326396368198}

@@ -50,7 +50,7 @@ public class SeedScript : MonoBehaviour
 
     IEnumerator WaitTime()
     {
-        yield return new WaitForSeconds(prefabPlant.GetComponent<Properties>().timeRecharge);
+        yield return new WaitForSeconds(prefabPlant.GetComponent<SunFlowerScript>().timeRecharge);
         canPlant = true;
     }
 

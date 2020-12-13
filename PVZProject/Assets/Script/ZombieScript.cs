@@ -66,6 +66,14 @@ public class ZombieScript : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.tag == "Reset")
+        {
+            Destroy(gameObject);
+        }
+    }
 
     IEnumerator Eating(Collider2D col)
     {
@@ -75,4 +83,5 @@ public class ZombieScript : MonoBehaviour
         if(col != null)
         col.gameObject.GetComponent<Properties>().life--;
     }
+
 }

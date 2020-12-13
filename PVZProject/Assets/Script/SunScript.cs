@@ -24,6 +24,7 @@ public class SunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //tumpang tindih
         if (col.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
             OnMouseDown();
     }
@@ -34,6 +35,7 @@ public class SunScript : MonoBehaviour
             rb.velocity = new Vector2(0, -vel * Time.deltaTime);
     }
 
+    //Ketika Menekan matahari
     void OnMouseDown()
     {
         if (Input.GetMouseButtonDown(0))

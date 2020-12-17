@@ -45,7 +45,7 @@ public class SeedScript : MonoBehaviour
     {
         canPlant = false;
         GameManager.currentSeed = null;
-        StartCoroutine("WaitTime");
+        StartCoroutine(WaitTime());
     }
 
     IEnumerator WaitTime()

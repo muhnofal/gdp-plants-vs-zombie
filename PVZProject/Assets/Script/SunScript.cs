@@ -44,7 +44,7 @@ public class SunScript : MonoBehaviour
             AudioSource.PlayClipAtPoint(clip, Camera.main.transform.position);
             Destroy(gameObject);
 
-        }    
+        }   
     }
 
 }

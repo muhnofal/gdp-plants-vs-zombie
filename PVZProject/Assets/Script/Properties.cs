@@ -8,8 +8,8 @@ public class Properties : MonoBehaviour
     //Script Properties adalah hal - hal yang menyangkut tentang karakter secara umum, seperti harga, dan life;
 
     public GameObject prefabPlant;
-
     public int life, price;
+    public int timeRecharge;
 
     void Start()
     {

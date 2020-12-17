@@ -10,12 +10,14 @@ public class SunFlowerScript : MonoBehaviour
     public GameObject prefabSun;
     public EnergyScript energyBar;
     public int Energycooldown = 0;
-    public int timeRecharge;
     public int speed = 0;
     [SerializeField]
     private int maxEnergy = 0;
     [SerializeField]
     private int currentEnergy = 0;
+    private Collider2D col;
+    private Animator anim;
+    private AudioSource sound;
 
     public WaitForSeconds regenSpeed = new WaitForSeconds(1f);
 
@@ -23,29 +25,35 @@ public class SunFlowerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("InstantiateSun", 5, speed);
         energyBar.setMaxEnergy(maxEnergy);
         energyBar.setEnergy(currentEnergy);
         StartCoroutine(regenFirst());
+        InvokeRepeating("InstantiateSun", 5, speed);
+        col = GetComponent<Collider2D>();
+        anim = GetComponent<Animator>();
+        sound = GetComponent<AudioSource>();
     }
 
     void Update()
     {
-        if (currentEnergy > maxEnergy)
+        if (currentEnergy >= maxEnergy)
         {
             currentEnergy = maxEnergy;
+            if (col.OverlapPoint(Camera.main.ScreenToWorldPoint(Input.mousePosition)))
+                OnMouseDown();
         }
         else if (currentEnergy < 0)
         {
             currentEnergy = 0;
         }
+
     }
 
-    // Pencet Tanaman
+    //Pencet Tanaman
     private void OnMouseDown()
     {
-        
-        if (Input.GetMouseButtonDown(0))
+
+        if (Input.GetMouseButton(0))
         {
             UseStamina(maxEnergy);
         }
@@ -76,22 +84,26 @@ public class SunFlowerScript : MonoBehaviour
     //Ketika skill active
     void skillActive()
     {
-        speed -= 18;
+        speed = 3;
         InvokeRepeating("InstantiateSun", 3, speed);
     }
 
     //Ketika skill tidak active
     void skillDeactive()
     {
-        speed += 18;
+        speed += 20;
         InvokeRepeating("InstantiateSun", 0, speed);
     }
 
     // ini untuk ketika player memencet skill, dah akhirnya regen setelah 10 detik
     private IEnumerator regenEnergy()
     {
+        if (!sound.isPlaying)
+            sound.Play();
         skillActive();
-        yield return new WaitForSeconds(Energycooldown);
+        anim.SetBool("SkillActive", true);
+        yield return new WaitForSecondsRealtime(5);
+        anim.SetBool("SkillActive", false);
         CancelInvoke();
         skillDeactive();
         while (currentEnergy < maxEnergy)
@@ -106,7 +118,7 @@ public class SunFlowerScript : MonoBehaviour
     // Ini untuk regen pas pertama ngedeploy tanaman pertama kali
     private IEnumerator regenFirst()
     {
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSecondsRealtime(0);
 
         while (currentEnergy < maxEnergy)
         {

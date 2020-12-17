@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject prefabSun;
     public Transform pointSun;
     public static GameObject currentPlant, currentSeed;
+    
 
     // Start is called before the first frame update
     void Start()

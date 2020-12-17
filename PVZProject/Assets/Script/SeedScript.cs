@@ -45,12 +45,12 @@ public class SeedScript : MonoBehaviour
     {
         canPlant = false;
         GameManager.currentSeed = null;
-        StartCoroutine("WaitTime");
+        StartCoroutine(WaitTime());
     }
 
     IEnumerator WaitTime()
     {
-        yield return new WaitForSeconds(prefabPlant.GetComponent<SunFlowerScript>().timeRecharge);
+        yield return new WaitForSeconds(prefabPlant.GetComponent<Properties>().timeRecharge);
         canPlant = true;
     }
 

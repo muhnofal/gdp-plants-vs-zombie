@@ -681,4 +681,4 @@ MonoBehaviour:
   timeRecharge: 6
   speedPea: 1.5
   maxEnergy: 50
-  currentEnergy: 40
+  currentEnergy: 0

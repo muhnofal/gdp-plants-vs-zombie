@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 56.800003
+      value: 46.09
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.y
@@ -285,7 +285,6 @@ MonoBehaviour:
   - Kalian bisa menekan untuk bisa menggunakan skill
   - Setiap plant memiliki skill yang berbeda - beda, juga cooldown yang berbeda -
     beda
-  - Sudah disediakan 1 flower yang memiliki energy yang full
   - Tekan Tanaman!
   typingSpeed: 0.02
   continueButton: {fileID: 264873023}
@@ -1693,6 +1692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyCountText: {fileID: 489632297}
+  gameManager: {fileID: 1058437403}
 --- !u!1 &1092701176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,7 +1963,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.850002
+      value: 53.14
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2024,7 +2024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.850002
+      value: 53.14
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2085,7 +2085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.81
+      value: 36.1
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2146,7 +2146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 52.980003
+      value: 42.27
       objectReference: {fileID: 0}
     - target: {fileID: 1080047693536402714, guid: 3e36c256afb903b49b68f13382525894, type: 3}
       propertyPath: m_LocalPosition.y

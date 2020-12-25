@@ -36,4 +36,9 @@ public class GameManager : MonoBehaviour
         Instantiate(prefabSun, pointSun.position, Quaternion.identity);
     }
 
+    public void levelComplete()
+    {
+        Time.timeScale = 0;
+    }
+
 }

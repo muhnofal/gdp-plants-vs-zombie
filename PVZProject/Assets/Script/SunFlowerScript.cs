@@ -98,8 +98,6 @@ public class SunFlowerScript : MonoBehaviour
     // ini untuk ketika player memencet skill, dah akhirnya regen setelah 10 detik
     private IEnumerator regenEnergy()
     {
-        if (!sound.isPlaying)
-            sound.Play();
         skillActive();
         anim.SetBool("SkillActive", true);
         yield return new WaitForSecondsRealtime(5);

@@ -24,7 +24,7 @@ public class CountEnemy : MonoBehaviour
 
         if(enemies.Length <= 0)
         {
-            Time.timeScale = 0;
+            gameManager.levelComplete();
         }
     }
 }

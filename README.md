@@ -1,2 +1,1 @@
-# gdp-plants-vs-zombie
-Repo GDP Plants vs Zombie
+Pada project ini saya membuat game Plants vs Zombie dengan sedikit meremakenya
